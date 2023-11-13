@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobility Report</title>
+
+    <!-- Plotly -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <link rel="stylesheet" href="ass2.css">
+</head>
+<body>
+    <h1>Covid-19 Mobility Dashboard</h1>
+
+    <!-- Average map -->
+    <h2>The following dataset shows how a community moved differently due to Covid-19. The dataset spans the year 2022.</h2>
+    <div id="average"></div>
+    <div id="group_ave"></div>
+    
+    <hr>
+
+    <!-- Comparison maps -->
+    <h2>The maps below show the change in mobility in the first half of the year, to the second half of the year</h2>
+    <div class = chart-container>
+        <div class = "chart" id="retail"></div>
+        <div class = "chart" id="grocery"></div>
+    </div>
+    <div class = chart-container>
+        <div class = "chart" id="park"></div>
+        <div class = "chart" id="transit"></div>
+    </div>
+    <div class = chart-container>
+        <div class = "chart" id="workplace"></div>
+        <div class = "chart" id="residential"></div>
+    </div>
+    
+    <!-- Script -->
+    <script src="ass2.js"></script>
+</body>
+</html>
